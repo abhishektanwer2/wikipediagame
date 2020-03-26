@@ -1,0 +1,21 @@
+The Wikipedia game:
+
+Problem: 
+    Given a starting page on Wikipedia, using connected pages, find a list of linked pages to a target page.
+    
+	For example, starting at the page: "Battlestar Galactica" and target page: "Grace Hopper". Battlestar Galactica has a link to the page "Kobol", which has a link to "COBOL", which has a link to the page "Grace Hopper", the end page. Therefore, the answer would be:
+    Battlestar Galactica -> Kobol -> COBOL -> Grace Hopper
+    
+I would run through this pathway yourself to understand the problem:
+    https://en.wikipedia.org/wiki/Battlestar_Galactica
+    https://en.wikipedia.org/wiki/Kobol
+    https://en.wikipedia.org/wiki/COBOL
+    https://en.wikipedia.org/wiki/Grace_Hopper
+
+Instructions:
+    We're looking for a Python program called "wikipedia_game.py" that takes a source page and target page as command line arguments and you give us the list of connected links from start to end. Please zip up the wikipedia_game.py program along with a requirements.txt (if you used any pip packages) in addition to any other resources used to solve the problem. Try to make sure that after unzipping and installing any pip requirements that the python program will run in it's current directory. If you have a more advanced solution, for example using a database, please provide instructions to set it up.
+    
+    Given this input for the python pogram:
+    python wikipedia_game.py "Battlestar Galactica" "Grace Hopper"
+    We should get this output:
+    Battlestar Galactica -> Kobol -> COBOL -> Grace Hopper
